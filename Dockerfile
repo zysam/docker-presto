@@ -7,7 +7,7 @@ MAINTAINER smizy
 
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION
+ARG VERSION=0.171
 
 LABEL \
     org.label-schema.build-date=$BUILD_DATE \
