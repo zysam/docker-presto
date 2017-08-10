@@ -1,15 +1,11 @@
-FROM smizy/hadoop-base:2.7.3-alpine
-#as hadoop-base
+FROM smizy/hadoop-base:2.7-alpine
 
-# ----------
-
-FROM alpine:3.5
+# FROM alpine:3.5
 MAINTAINER sysamlam
 
 # ARG BUILD_DATE
 # ARG VCS_REF
-# ARG VERSION
-ENV VERSION 0.171
+ARG VERSION=0.171
 
 
 ENV PRESTO_VERSION       ${VERSION}
