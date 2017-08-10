@@ -7,18 +7,19 @@ MAINTAINER smizy
 
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION
+# ARG VERSION
+ENV VERSION 0.171
 
 LABEL \
     org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.docker.dockerfile="/Dockerfile" \
     org.label-schema.license="Apache License 2.0" \
-    org.label-schema.name="smizy/presto" \
+    org.label-schema.name="sysamlam/presto" \
     org.label-schema.url="https://github.com/smizy" \
     org.label-schema.vcs-ref=$VCS_REF \
     org.label-schema.vcs-type="Git" \
     org.label-schema.version=$VERSION \
-    org.label-schema.vcs-url="https://github.com/smizy/docker-presto"
+    org.label-schema.vcs-url="https://github.com/sysamlam/docker-presto"
 
 
 ENV PRESTO_VERSION       ${VERSION}
