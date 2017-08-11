@@ -23,7 +23,7 @@ ENV PRESTO_DISCOVERY_URI  http://coordinator-1.vnet:8080
 ENV JAVA_HOME   /usr/lib/jvm/default-jvm
 ENV PATH        $PATH:${JAVA_HOME}/bin:${PRESTO_HOME}/bin
 
-COPY /usr/local/hadoop-2.7/lib/native  /tmp/nativelib/Linux-amd64
+RUN cp -r /usr/local/hadoop-2.7/lib/native  /tmp/nativelib/Linux-amd64
 
 RUN set -x \
     && apk update \
